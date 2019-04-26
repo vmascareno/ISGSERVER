@@ -58,8 +58,16 @@ public class GraduateSchema {
 
     }
 
-    public static List<Graduate> getAll() {
-        return GraduateSchema.GRADUATES;
+    public static String[] getAll() {
+        String[] graduates = new String[GRADUATES.size()];
+        int currentPosition = 0;
+
+        for (Graduate graduate : GRADUATES) {
+            graduates[currentPosition] = graduate.toString();
+            currentPosition++;
+        }
+
+        return graduates;
     }
 
     public static Graduate get(int controlNumber) {
@@ -74,6 +82,26 @@ public class GraduateSchema {
         }
 
         return null;
+    }
+
+    public static String[] getByCareer(String career) {
+        String[] graduates = new String[GRADUATES.size()];
+//        int currentPosition = 0;
+//
+//        for (Graduate graduate : GRADUATES) {
+//            graduates[currentPosition] = graduate.toString();
+//            currentPosition++;
+//        }
+//
+//        return graduates;
+//
+//        for (Graduate graduate : GRADUATES) {
+//            if (graduate.getCareer().equals(career)) {
+//                graduates.add(graduate);
+//            }
+//        }
+
+        return graduates;
     }
 
 }

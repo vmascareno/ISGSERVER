@@ -33,7 +33,11 @@ public class GraduateController {
         return GraduateSchema.get(controlNumber);
     }
 
-    public static List<Graduate> getAll() {
+    public static String[] getByCareer(String career) {
+        return GraduateSchema.getByCareer(career);
+    }
+
+    public static String[] getAll() {
         return GraduateSchema.getAll();
     }
 }

@@ -10,5 +10,5 @@ package enums;
  * @author vmascareno
  */
 public enum Operation {
-    ADD, DELETE, UPDATE, GET, GET_ALL, EXIT
+    ADD, DELETE, UPDATE, GET_BY_CONTROL_NUMBER, GET_BY_CAREER, GET_ALL, EXIT
 }

@@ -5,11 +5,15 @@
  */
 package models;
 
+import java.io.Serializable;
+
 /**
  *
  * @author vmascareno
  */
-public class Graduate {
+public class Graduate implements Serializable {
+
+    private static final long serialVersionUID = 1113799434508676095L;
 
     private int controlNumber;
     private String name;
